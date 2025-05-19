@@ -1,0 +1,14 @@
+{
+  "git.publishBranch": "never",
+  "gitlens.publishBranch": "never",
+  "git.enableSmartCommit": false,
+  "git.autofetch": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "files.associations": { "*.json": "jsonc" },
+  "search.exclude": {
+    "/packages/be-demo-editor/lib/monaco/libtypes/*": true,
+    "/docs/component/API/*": true,
+    "/api-meta/*": true
+  }
+}
