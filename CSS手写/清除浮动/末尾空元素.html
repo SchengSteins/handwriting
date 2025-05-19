@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高度塌陷</title>
+    <style>
+        .box {
+            border: 1px solid black;
+            padding: 5px;
+            width: 450px;
+        }
+
+        .left {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            float: left;
+        }
+
+        .right {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            float: right;
+        }
+
+        /* 增加了渲染负担 */
+        .bottomDiv {
+            /* clear属性控制不可在元素左右出现浮动元素。而此元素不脱离文档流，因此能解决高度塌陷 */
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="left"></div>
+        <div class="right"></div>
+        <div class="bottomDiv"></div>
+    </div>
+</body>
+
+</html>

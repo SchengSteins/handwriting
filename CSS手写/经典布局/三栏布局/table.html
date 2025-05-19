@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* table布局 */
+        .layout .table {
+            display: table;
+            width: 100%;
+            height: 100px;
+        }
+
+        .layout .table div {
+            display: table-cell;
+        }
+
+        .table_left {
+            width: 300px;
+            background-color: violet;
+        }
+
+        .table_right {
+            width: 300px;
+            background: blue;
+        }
+
+        .table_center {
+            background: turquoise;
+        }
+    </style>
+
+</head>
+
+<body>
+    <section class="layout">
+        <article class="table">
+            <div class="table_left"></div>
+            <div class="table_center">
+                <h1>使用table实现解决三栏布局</h1>
+            </div>
+            <div class="table_right"></div>
+        </article>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* grid布局 */
+        .layout .grid {
+            display: grid;
+            grid-template-rows: 100px;
+            grid-template-columns: 300px auto 300px;
+        }
+
+        .grid_left {
+            background-color: #cf54cf;
+        }
+
+        .grid_right {
+            background: #0202bb;
+        }
+
+        .grid_center {
+            background: #0fdf43;
+        }
+    </style>
+
+</head>
+
+<body>
+    <section class="layout">
+        <article class="grid">
+            <div class="grid_left"></div>
+            <div class="grid_center">
+                <h1>使用grid实现解决三栏布局</h1>
+            </div>
+            <div class="grid_right"></div>
+        </article>
+    </section>
+</body>
+
+</html>

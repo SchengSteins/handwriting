@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* flex 定位布局 */
+        .layout .flex {
+            display: flex;
+            min-height: 100px;
+        }
+
+        .flex_left {
+            width: 300px;
+            background-color: tomato;
+        }
+
+        .flex_right {
+            width: 300px;
+            background-color: tomato;
+        }
+
+        .flex_center {
+            /* flex: 1: 自动填充满剩余空间 */
+            flex: 1;
+            background-color: violet;
+        }
+    </style>
+
+</head>
+
+<body>
+    <section class="layout">
+        <article class="flex">
+            <div class="flex_left"></div>
+            <div class="flex_center">
+                <h1>使用flexBox实现解决三栏布局</h1>
+            </div>
+            <div class="flex_right"></div>
+        </article>
+    </section>
+</body>
+
+</html>

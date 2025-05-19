@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高度塌陷</title>
+    <style>
+        .box {
+            border: 1px solid black;
+            padding: 5px;
+            width: 450px;
+            /* 当文本过长且包含英文时，会出现英文被隐藏的情况 */
+            overflow: hidden;
+        }
+
+        .left {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            float: left;
+        }
+
+        .right {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="left"></div>
+        <div class="right"></div>
+        <div>林三心林三心林三心林三心林三心林三心林三心林三心林三心林三心林三心林林三心林林三心林林三心林林三心林林三心林林三心林林三心林林三心林林三心林林三心林林sunshine_Linsunshine_Linsunshine_Linsunshine_Linsunshine_Linsunshine_Linsunshine_Linsunshine_Linsunshine_Linsunshine_Linsunshine_Lin心林林三心</div>
+    </div>
+</body>
+
+</html>

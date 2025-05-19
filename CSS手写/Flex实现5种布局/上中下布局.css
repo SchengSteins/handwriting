@@ -1,0 +1,23 @@
+/* <body>
+  <header>HEADER</header>
+  <article>CONTENT</article>
+  <footer>FOOTER</footer>
+</body> */
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  height: 300px;
+}
+
+footer {
+  height: 300px;
+}
+
+article {
+  flex: auto
+}

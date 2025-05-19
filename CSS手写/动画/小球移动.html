@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* animation */
+        .animation {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #0ff;
+            animation: move 2s linear 3 alternate both;
+        }
+
+        @keyframes move {
+            0% {
+                transform: translate(0, 0);
+            }
+
+            100% {
+                transform: translate(200px, 0);
+            }
+        }
+
+        /* transition */
+        .transition {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #0ff;
+            transition: transform 1s linear;
+        }
+
+        .transition:hover {
+            transform: translate(200px, 0);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="animation"></div>
+    <div class="transition"></div>
+</body>
+
+</html>

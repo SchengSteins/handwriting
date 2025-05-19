@@ -1,0 +1,34 @@
+/* <body>
+  <header>HEADER</header>
+  <div class="content">
+    <aside>ASIDE</aside>
+    <article>CONTENT</article>
+  </div>
+  <footer>FOOTER</footer>
+</body> */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: 300px;
+}
+
+aside {
+    width: 200px;
+}
+
+footer {
+    height: 300px;
+}
+
+.content {
+    flex: auto;
+    display: flex;
+}
+
+.content {
+    flex: auto;
+}

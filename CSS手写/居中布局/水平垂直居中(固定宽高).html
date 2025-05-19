@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* absolute + 负 margin */
+        /* .father {
+            position: relative;
+        }
+
+        .son {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -50px;
+            margin-top: -50px;
+        } */
+
+        /* absolute + margin auto */
+        .father {
+            position: relative;
+        }
+
+        .son {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        /* absolute + calc */
+        /* .father {
+            position: relative;
+        }
+
+        .son {
+            position: absolute;
+            top: calc(50% - 50px);
+            left: calc(50% - 50px);
+        } */
+    </style>
+
+</head>
+
+<body>
+    <div class="father" style="height: 200px; width: 200px; background-color: blue;">
+        <div class="son" style="height: 100px; width: 100px; background-color: red;"></div>
+    </div>
+
+</body>
+
+</html>

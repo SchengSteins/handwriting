@@ -1,0 +1,31 @@
+<!DOCType html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        /* 高清屏dpr = 2，即长和宽用2个像素表示1个像素，所以2880个物理像素点实际上只表示1440个逻辑像素 */
+        .hr {
+            width: 300px;
+            background-color: #000;
+        }
+
+        .hr.half-px {
+            height: 1px;
+            transform:scaleY(0.5);
+        }
+
+        .hr.one-px {
+            height: 1px;
+        }
+    </style>
+</head>
+
+<body>  
+    <p>0.5px</p>
+    <div class="hr half-px"></div>
+    <p>1px</p>
+    <div class="hr one-px"></div>
+</body>
+
+</html>

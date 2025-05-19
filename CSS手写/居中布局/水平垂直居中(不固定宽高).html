@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* 不固定宽高指不在样式里根据宽高做变换 */
+
+        /* absolute + transform */
+        /* .father {
+            position: relative;
+        }
+
+        .son {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        } */
+
+        /* line-height + vertical-align */
+        /* .father {
+            line-height: 200px;
+            text-align: center;
+        }
+
+        .son {
+            display: inline-block;
+            vertical-align: middle;
+        } */
+
+        /* table-cell */
+        /* .father {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        .son {
+            display: inline-block;
+        } */
+
+        /* flex */
+        .father {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* grid */
+        /* .father {
+            display: grid;
+        }
+
+        .son {
+            margin: auto;
+        } */
+    </style>
+
+</head>
+
+<body>
+    <div class="father" style="height: 200px; width: 200px; background-color: blue;">
+        <div class="son" style="height: 100px; width: 50px; background-color: red;"></div>
+    </div>
+</body>
+
+</html>
