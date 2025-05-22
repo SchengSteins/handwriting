@@ -1,1 +1,1 @@
-console.log('Hello World')
+console.log(parseInt('3', 2))
